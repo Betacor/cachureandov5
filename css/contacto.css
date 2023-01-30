@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/* Estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-style: light; */
+}
+
+body{
+    /* font-family: 'Poppins', sans-serif; */
+    width: 100%;
+}
+
+
+/* Estilos para el HEADER */
+
+/* Estilos para el header : Logo y Nombre Empresa */
+
+.logo{
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.nombre-empresa{
+    margin-left: 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el header : Barra de navegación */
+
+nav{
+    margin-top: 2.5rem;
+}
+
+
+/* Estilos para el MAIN  */
+
+section{
+    margin-top: 5rem;
+    padding: .8rem;
+    border-radius: .5rem;
+}
+
+.section-img{
+    width: 60%;
+}
+
+.card-img{
+    width: 40%;
+    height: 40%;
+}
+
+h2{
+    text-align: center;
+}
+
+
+/* Estilos para el footer*/
+
+footer{
+    background-color: rgba(189, 187, 136, 0.548);
+    color: antiquewhite;
+    padding: 2rem;
+    text-align: center;
+    /* font-weight: bold; */
+}
+
+
+/* Responsive */
+
+@media (max-width:480px) {
+    
+    /* Estilos para footer */
+
+    footer {
+        font-size: 14px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+
+@media (min-width:480px) and (max-width: 768px){
+
+    /* Estilos para footer */
+
+    footer {
+        font-size: 14px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+
+
+
+
