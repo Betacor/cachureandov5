@@ -11,7 +11,7 @@
 
 	</head>
 	
-    <body>
+    <body onload="clock()">
 
         <!--  Encabezado de la página -->
 		<header>
@@ -34,11 +34,11 @@
                             </li>
                             
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false" href="#quierocomprar">Quiero Comprar</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="./tops.html">Tops</a>
-                                    <a class="dropdown-item" href="./bottoms.html">Bottoms</a>
+                                    <a class="dropdown-item" href="./bottoms.html">Pantalones</a>
                                     <a class="dropdown-item" href="./chaquetas.html">Chaquetas</a>
                                     <a class="dropdown-item" href="./calzado.html">Calzado</a>
                                 </div>
@@ -99,6 +99,8 @@
         <footer>
             <div class="carta-final container-fluid text-white text-center">
                 <img src="./img/gancho-de-ropa(2).png" height="40" width="40" alt="">
+                <div id="clock">
+                </div>
                 <div class="body py-3">
                     <p class="title sus my-0">Cartquitects | Viña de Mar | Región de Valparaíso | 2023</p>
                 </div>
@@ -109,6 +111,8 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"></script>
+            <script src="./js/index.js" type="text/javascript">
+            </script>
 	</body>
 
 </html>
