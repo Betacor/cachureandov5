@@ -18,3 +18,8 @@ function toTwoDigits(n) {
     }
     return newString;
 }
+function mostrar() {
+    swal("Seguro que deseas agregar al carrito",{
+        buttons: ["Si", "No"]
+    });
+}
