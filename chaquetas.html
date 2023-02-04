@@ -11,7 +11,7 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body onload="clock()">
 
     <!--  Encabezado de la página -->
     <header>
@@ -34,11 +34,11 @@
                         </li>
                         
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false" href="">Quiero Comprar</a>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="./tops.html">Tops</a>
-                                    <a class="dropdown-item" href="./bottoms.html">Bottoms</a>
+                                    <a class="dropdown-item" href="./bottoms.html">Pantalones</a>
                                     <a class="dropdown-item" href="./chaquetas.html">Chaquetas</a>
                                     <a class="dropdown-item" href="./calzado.html">Calzado</a>
                                 </div>
@@ -68,17 +68,17 @@
 
     <main>
 
-        <section id="Tops">
-            <h2>Chaquetas</h2>
+        <section id="Chaquetas">
+            <h2>CHAQUETAS</h2>
             <div class="row row-cols-1 row-cols-md-6 g-4 mt-5 mb-5 px-5">
 
                 <div class="col-lg-3 col-md-6 col-xs-6">
                     <div class="card">
                     <div class="carta">
                         <img src="https://static.zara.net/photos///2023/W/0/1/p/7005/707/712/2/w/750/7005707712_6_1_1.jpg?ts=1672846140211"
-                            class="card-img-top" alt="..." id="tops"></div>
+                            class="card-img-top" alt="..."></div>
                         <div class="card-body text-end">
-                            <h5 class="card-title">Top rosa</h5>
+                            <h5 class="card-title">Blazer blanco</h5>
                             <a href="#" class="btn"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
                         </div>
                     </div>
@@ -88,9 +88,9 @@
                     <div class="card">
                     <div class="carta">
                         <img src="https://static.zara.net/photos///2023/W/0/1/p/8495/150/630/2/w/750/8495150630_6_1_1.jpg?ts=1671554996069"
-                            class="card-img-top" alt="..." id="tops"></div>
+                            class="card-img-top" alt="..."></div>
                         <div class="card-body text-end">
-                            <h5 class="card-title">Top rosa</h5>
+                            <h5 class="card-title">Chaqueta rosada</h5>
                             <a href="#" class="btn"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
                         </div>
                     </div>
@@ -100,9 +100,9 @@
                     <div class="card">
                     <div class="carta">
                         <img src="https://static.zara.net/photos///2023/W/0/1/p/7043/264/649/2/w/750/7043264649_6_1_1.jpg?ts=1670243613749"
-                            class="card-img-top" alt="..." id="tops"></div>
+                            class="card-img-top" alt="..."></div>
                         <div class="card-body text-end">
-                            <h5 class="card-title">Top rosa</h5>
+                            <h5 class="card-title">Chaqueta roja</h5>
                             <a href="#" class="btn"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
                         </div>
                     </div>
@@ -112,16 +112,18 @@
                     <div class="card">
                     <div class="carta">
                         <img src="https://static.zara.net/photos///2023/W/0/1/p/7189/224/743/2/w/750/7189224743_6_1_1.jpg?ts=1671554974853"
-                            class="card-img-top" alt="..." id="tops"></div>
+                            class="card-img-top" alt="..."></div>
                         <div class="card-body text-end">
-                            <h5 class="card-title">Top rosa</h5>
+                            <h5 class="card-title">Chaqueta beige</h5>
                             <a href="#" class="btn"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+            <div id="clock">
+            </div>
+            </main>
 
     <!-- Pie de página-->
     
@@ -136,7 +138,8 @@
 
     <script src="./js/bootstrap/bootstrap.bundle.min.js">
     </script>
-
+    <script src="./js/index.js" type="text/javascript">
+    </script>
 </body>
 
 </html>
