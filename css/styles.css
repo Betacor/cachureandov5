@@ -10,81 +10,18 @@
     font-style: light;
 }
 
-body{
-    /* font-family: 'Poppins', sans-serif; */
-    width: 100%;
-}
-
-
-/* Estilos para el HEADER */
-
-/* Estilos para el header : Logo y Nombre Empresa */
-
-.logo{
-    width: 4rem;
-    margin-right: 1rem;
-}
-
-.nombre-empresa{
-    margin-left: 5rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Estilos para el header : Barra de navegación */
-
-
-
-#navbarColor03{
-border-color: black;
-}
 
 /* Estilos para el header : Hero */
 
-.hero {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+.carousel{
+    max-height: 40rem;
 }
-
-.hero img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.carousel-item img{
+   object-fit: cover;
+   max-height: 40rem;
 }
-
-.hero .hero-text {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    z-index: 1;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero .hero-text h1 {
+.carousel-caption{
     color: #FFF;
-    font-size: 64px;
-    margin-bottom: 20px;
-}
-
-.hero .hero-text p {
-    color: #FFF;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.hero .hero-text a {
-    color: #333;
-    font-size: 20px;
-    background-color: #FFF;
-    border: 2px solid #FFF;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 2px;
 }
 
 
@@ -114,23 +51,54 @@ section p{
 
 h2{
     text-align: center;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    color: #8c797e;
 }
 
 #quierovender{
-    background-color: rgb(234, 237, 226);
+    background-color: #faa6bca5;
     padding: 7rem;
+}
+
+#quienessomos{
+    background-color: #ffffff;
+    letter-spacing: .05rem;
 }
 
 
 /* Estilos para el footer*/
 
 footer{
-    background-color: rgba(255, 153, 155, 0.852);
-    color: antiquewhite;
-    padding: 4rem;
+    background-color: #FAA6BD;
+    padding: 3rem;
     text-align: center;
+    text-shadow: #333;
+    font-weight: 500;
+    letter-spacing: .1rem;
     /* font-weight: bold; */
 }
+
+footer .social {
+    margin-top: 1rem;
+    text-align:center;
+  }
+  
+footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+footer .social > a:hover {
+    opacity:0.4;
+  }
 
 /* Responsive */
 
@@ -287,7 +255,15 @@ footer{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: larger;
-    background-color: rgba(255, 153, 155, 0.852);
+    background-color: #FAA6BD;
     color: #FFF;
 }
-
+.flecha{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+    border-radius: 50%;
+    padding: 0;
+  }
