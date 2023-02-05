@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-
 /* Estilos generales */
 *{
     padding: 0;
@@ -30,11 +28,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* Estilos para el header : Barra de navegación */
 
-nav{
-    margin-top: 2.5rem;
-}
 
 
 /* Estilos para el MAIN  */
@@ -66,8 +60,8 @@ footer{
     color: antiquewhite;
     padding: 2rem;
     text-align: center;
-    /* font-weight: bold; */
 }
+
 
 
 /* Responsive */

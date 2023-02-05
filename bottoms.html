@@ -48,8 +48,13 @@
                             <a class="nav-link" href="./quierovender.html">Quiero vender</a>
                         </li>
                                                 
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./contacto.html" role="button" aria-haspopup="true" aria-expanded="false" href="">Contacto</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="./contacto.html">Escríbenos</a>
+                                <a class="dropdown-item" href="./encuesta.html">Encuesta</a>
+                                
+                            </div>
                         </li>
                         
                     </ul>
@@ -129,16 +134,18 @@
     <footer>
         <div class="carta-final container-fluid text-white text-center">
             <img src="./img/gancho-de-ropa(2).png" height="40" width="40" alt="">
+
+            <!-- Fecha y Hora -->
+            <div id="clock"></div>
+
             <div class="body py-3">
                 <p class="title sus my-0">Cartquitects | Viña de Mar | Región de Valparaíso | 2023</p>
             </div>
         </div>
     </footer>
 
-    <script src="./js/bootstrap/bootstrap.bundle.min.js">
-    </script>
-    <script src="./js/index.js" type="text/javascript">
-    </script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 
 </body>
 

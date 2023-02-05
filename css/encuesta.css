@@ -1,76 +1,110 @@
-.center-block {
-	float: none;
+/* Estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    /* box-sizing: border-box; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-style: light; */
 }
 
-/* hide input */
-input.radio:empty {
-	display: none;
+body{
+    /* font-family: 'Poppins', sans-serif; */
+    width: 100%;
 }
 
-/* style label */
-input.radio:empty~label {
-	position: relative; line-height: 2.5em;
-	text-indent: 3.25em;
-	margin-top: 0.5em;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+
+/* Estilos para el HEADER */
+
+/* Estilos para el header : Logo y Nombre Empresa */
+
+.logo{
+    width: 4rem;
+    margin-right: 1rem;
 }
 
-input.radio:empty~label:before {
-	position: absolute;
-	display: block;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	content: '';
-	width: 2.5em;
-	background: #D1D3D4;
-	border-radius: 18px 18px 18px 18px;
-	-ms-flex-align: center;
+.nombre-empresa{
+    margin-left: 5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* toggle hover */
-input.radio:hover:not(:checked)~label:before {
-	content: '\2714';
-	text-indent: .9em;
-	color: #C2C2C2;
+
+/* Estilos para el MAIN  */
+
+section{
+    margin-top: 5rem;
+    padding: .8rem;
+    border-radius: .5rem;
 }
 
-input.radio:hover:not(:checked)~label {
-	color: #888;
+.section-img{
+    width: 60%;
 }
 
-/* toggle on */
-input.radio:checked~label:before {
-	content: '\2714';
-	text-indent: .9em;
+.card-img{
+    width: 40%;
+    height: 40%;
+}
+
+h2{
+    text-align: center;
+}
+
+
+/* Estilos para el footer*/
+
+footer{
+    background-color: rgba(189, 187, 136, 0.548);
+    color: antiquewhite;
+    padding: 2rem;
+    text-align: center;
+    /* font-weight: bold;  */
+
+    /* bottom: 0; */
+}
+
+
+
+/* Responsive */
+
+@media (max-width:480px) {
+    
+    /* Estilos para footer */
+
+    footer {
+        font-size: 14px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 
 }
 
-input.radio.siempre:checked~label:before {
-	color: #9CE2AE;
-	background-color: #4baf6d;
+@media (min-width:480px) and (max-width: 768px){
+
+    /* Estilos para footer */
+
+    footer {
+        font-size: 14px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
 }
 
-input.radio.casiSiempre:checked~label:before {
-	color: #9CE2AE;
-	background-color: #87d350;
+
+/*Rating*/
+
+.field-label-header {
+    font-size: larger;
 }
 
-input.radio.algunasVeces:checked~label:before {
-	color: #dbc881;
-	background-color: #e5bb3a;
+.rating-header {
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
-input.radio.nunca:checked~label:before {
-	color: #aa3b41;
-	background-color: #d32827;
-}
+.fa-star{
+    color: rgba(144, 143, 105, 0.548);
+} 
 
-input.radio:checked~label {
-	color: #777;
-}
-/* radio focus */
+

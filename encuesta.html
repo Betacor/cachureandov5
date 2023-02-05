@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cachureando</title>
+		
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+		
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/encuesta.css">
+
+	</head>
+
+	<body onload="clock()">
+
+		<!--  Encabezado de la página -->
+		<header>
+
+			<!-- NAVBAR -->
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container-fluid gap-3">
+					<img src="./img/gancho-de-ropa(1).png" alt="..." class="logo p-2">
+					<a class="navbar-brand" href="./index.html">Cachureando</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarColor03"
+						aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle
+						navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarColor03">
+						<ul class="navbar-nav me-auto">
+
+							<li class="nav-item">
+								<a class="nav-link" href="#quienessomos">Quienes somos</a>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+									role="button"
+									aria-haspopup="true" aria-expanded="false" href="#quierocomprar">Quiero
+									Comprar</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="./tops.html">Tops</a>
+									<a class="dropdown-item" href="./bottoms.html">Bottoms</a>
+									<a class="dropdown-item" href="./chaquetas.html">Chaquetas</a>
+									<a class="dropdown-item" href="./calzado.html">Calzado</a>
+								</div>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="./quierovender.html">Quiero vender</a>
+							</li>
+
+                            <li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./contacto.html" role="button" aria-haspopup="true" aria-expanded="false" href="">Contacto</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="./contacto.html">Escríbenos</a>
+                                    <a class="dropdown-item" href="./encuesta.html">Encuesta</a>
+									
+								</div>
+							</li>
+
+						</ul>
+						<form class="d-flex">
+							<input class="form-control me-sm-2" type="search" placeholder="">
+							<button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+
+		</header>
+
+		<!-- Contenido de la página  -->
+		<main>
+			<section >
+
+                <!-- Encuesta -->
+				<h2>Encuesta de Satisfacción</h2>
+				
+                <div class="container">
+                    <div class="row justify-content-center py-5">
+
+                        <div class="form-group text-center mb-4 " id="rating-ability-wrapper">
+                            <label class="control-label" for="rating">
+                                <span class="field-label-header">En una escala del 0 al 10, donde 0 es muy deficiente y 10 es sobresaliente: <br> ¿Cómo calificarías tu experiencia en nuestro sitio web?</span><br>
+                                <span class="field-label-info"></span>
+                                <input type="hidden" id="selected_rating" name="selected_rating" value="">
+                            </label>
+                            <h2 class="bold rating-header" >
+                                <span class="selected-rating">0</span>
+                                <small> / 10</small>
+                            </h2>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="1" id="rating-star-1">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="2" id="rating-star-2">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="3" id="rating-star-3">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="4" id="rating-star-4">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="5" id="rating-star-5">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="6" id="rating-star-6">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="7" id="rating-star-7">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="8" id="rating-star-8">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="9" id="rating-star-9">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btnrating btn btn-default btn-lg" data-attr="10" id="rating-star-10">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </button>
+
+                            <div class="mt-4 form-check justify-content-center">
+								<button type="submit" class="btn btn-outline-secondary">Enviar</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+			</section>
+
+		</main>
+
+		<!-- Pie de página-->
+		<footer>
+			<div class="carta-final container-fluid text-white text-center">
+				<img src="./img/gancho-de-ropa(2).png" height="40" width="40" alt="">
+				
+                <!-- Fecha y Hora -->
+                <div id="clock"></div>
+
+                <div class="body py-3">
+					<p class="title sus my-0">Codecats | Viña de Mar | Región de Valparaíso | 2023</p>
+				</div>
+			</div>
+		</footer>
+	
+        <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/js/encuesta.js"></script>
+        <script src="./js/script.js" ></script>
+	</body>
+
+</html>
