@@ -1,6 +1,7 @@
 .encuesta{
 	/* height: 20rem; */
-
+	padding top: 0rem !important;
+	margin top: 0rem !important;
 }
 
 .center-block {
@@ -35,7 +36,7 @@ input.radio:empty~label:before {
 	content: '';
 	width: 2.5em;
 	background: #ffffff;
-	border-radius: 18px 18px 18px 18px;
+	border-radius: 15px 15px 15px 15px;
 	-ms-flex-align: center;
 }
 
