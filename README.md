@@ -1,6 +1,14 @@
 # Cachureando
+https://github.com/ylagosalfaro/cachureandov5
+
 Proyecto Grupal Front-End
 
-Karina | Yurisan | Francesca | Macarena
+Franchesca https://github.com/Frany02
 
-https://github.com/ylagosalfaro/cachureandov5
+Karina https://github.com/krynortz91
+
+Macarena https://github.com/sappy666
+
+Yurisan https://github.com/ylagosalfaro
+
+
