@@ -54,7 +54,7 @@ h2{
 /* Estilos para el footer*/
 
 footer{
-    background-color: rgba(189, 187, 136, 0.548);
+    background-color: rgba(255, 153, 155, 0.852);
     color: antiquewhite;
     padding: 2rem;
     text-align: center;
@@ -106,5 +106,15 @@ footer{
 .fa-star{
     color: rgba(144, 143, 105, 0.548);
 } 
+
+#clock{
+    /* padding-top: 2rem; */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    /* background-color: rgba(255, 153, 155, 0.852); */
+    color: #FFF;
+}
+
 
 
