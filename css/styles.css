@@ -13,7 +13,6 @@ body{
     width: 100%;
 }
 
-
 /* Estilos para el HEADER */
 
 /* Estilos para el header : Logo y Nombre Empresa */
@@ -28,62 +27,20 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
 #navbarColor03{
 border-color: black;
 }
 
 /* Estilos para el header : Hero */
 
-.hero {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
+/*.carousel-caption {
+    font-size: medium;
+}*/
 
-.hero img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.titulo-carrusel {
+    color: white;
+    
 }
-
-.hero .hero-text {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    z-index: 1;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero .hero-text h1 {
-    color: #FFF;
-    font-size: 64px;
-    margin-bottom: 20px;
-}
-
-.hero .hero-text p {
-    color: #FFF;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.hero .hero-text a {
-    color: #333;
-    font-size: 20px;
-    background-color: #FFF;
-    border: 2px solid #FFF;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 2px;
-}
-
 
 /* Estilos para el MAIN  */
 
@@ -133,46 +90,12 @@ footer{
 
 @media (max-width:480px) {
     
-    /* Estilos para hero */
-    .hero {
-        width: 100%;
-        height: 50vh;
-        overflow: hidden;
-        position: relative;
-    }
+    /* Estilos para carrusel */
 
-    .hero .hero-text {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        z-index: 1;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .hero .hero-text p {
+    .titulo-carrusel {
+        font-size: 2rem;
         color: #FFF;
-        font-size: 15px;
         margin-bottom: 10px;
-    }
-
-    .hero .hero-text h1 {
-        color: #FFF;
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text a {
-        color: #333;
-        letter-spacing: 2rem;
-        font-size: 15px;
-        background-color: #FFF;
-        border: 2px solid #FFF;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 2px;
     }
 
     /* Estilos para section */
@@ -194,45 +117,12 @@ footer{
 
 @media (min-width:480px) and (max-width: 768px){
 
-    /* Estilos para hero */
-    .hero {
-        width: 100%;
-        height: 50vh;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .hero .hero-text {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        z-index: 1;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .hero .hero-text p {
+    /* Estilos para carrusel */
+    
+    .titulo-carrusel {
+        font-size: 3rem;
         color: #FFF;
-        font-size: 15px;
         margin-bottom: 10px;
-    }
-
-    .hero .hero-text h1 {
-        color: #FFF;
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text a {
-        color: #333;
-        font-size: 15px;
-        background-color: #FFF;
-        border: 2px solid #FFF;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 2px;
     }
 
     /* Estilos para section */
@@ -254,14 +144,39 @@ footer{
 
 @media (min-width:768px) and (max-width: 1024px){
 
-    /* Estilos para hero */
-    .hero {
-        width: 100%;
-        height: 80vh;
-        overflow: hidden;
-        position: relative;
+    /* Estilos para carrusel */
+    .titulo-carrusel {
+        font-size: 4rem;
+        color: #FFF;
+        margin-bottom: 10px;
+    }
+    
+    /* Estilos para section */
+    section{
+        margin-top: 1rem;
+        padding: .8rem;
+        border-radius: .5rem;
     }
 
+    /* Estilos para footer */
+
+    footer {
+        font-size: 14px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    /* Estilos para carrusel */
+    .titulo-carrusel {
+        font-size: 4rem;
+        color: #FFF;
+        margin-bottom: 10px;
+    }
+    
     /* Estilos para section */
     section{
         margin-top: 1rem;
