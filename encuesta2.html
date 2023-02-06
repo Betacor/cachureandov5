@@ -15,7 +15,7 @@
 
 	</head>
 
-	<body>
+	<body onload="clock()">
 
         <!-- Navbar, se usa js para insertar -->
         <header id="header-nav"></header>
@@ -115,7 +115,11 @@
 		<footer>
 			<div class="carta-final container-fluid text-white text-center">
 				<img src="./img/gancho-de-ropa(2).png" height="40" width="40" alt="">
-				<div class="body py-3">
+				
+                <!-- Fecha y Hora -->
+                <div id="clock"></div>
+                
+                <div class="body py-3">
 					<p class="title sus my-0">Cartquitects  |   Viña de Mar  |  Región de Valparaíso   | 2023</p>
 					<div class="social">
 						<a href="#"><i class="icon ion-social-instagram"></i></a>
@@ -141,6 +145,7 @@
 		<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>	
 		<script src="./js/encuesta.js"></script>
 		<script src="./js/navbar.js"></script>
+        <script src="./js/index.js"></script> <!--Agrega Fecha y Hora-->
 		
 	</body>
 

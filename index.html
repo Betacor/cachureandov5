@@ -13,9 +13,9 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body onload="clock()">
           <!-- Navbar, se usa js para insertar -->
-  <header id="header-nav"></header>
+    <header id="header-nav"></header>
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -130,9 +130,9 @@
                 <a href="./quierovender.html" class="btn btn-outline-secondary">Si, quiero vender!</a>
             </div>
         </section>
-<div class="flecha">
-    <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
-</div>
+        <div class="flecha">
+            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
+        </div>
     </main>
 
 
@@ -141,6 +141,10 @@
     <footer>
         <div class="carta-final container-fluid text-white text-center">
             <img src="./img/gancho-de-ropa(2).png" height="40" width="40" alt="">
+            
+            <!-- Fecha y Hora -->
+            <div id="clock"></div>
+            
             <div class="body py-3">
                 <p class="title sus my-0">Cartquitects  |   Viña de Mar  |  Región de Valparaíso   | 2023</p>
                 <div class="social">
@@ -154,9 +158,9 @@
         </div>
     </footer>
 
-    <script src="./js/bootstrap/bootstrap.bundle.min.js">
-    </script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./js/navbar.js"></script>
+    <script src="./js/index.js"></script> <!--Agrega Fecha y Hora-->
 
 </body>
 
