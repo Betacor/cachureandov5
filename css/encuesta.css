@@ -1,7 +1,14 @@
+.encuesta{
+	/* height: 20rem; */
+
+}
+
 .center-block {
 	float: none;
 }
-
+.panel-heading{
+	margin: 0 auto;
+}
 /* hide input */
 input.radio:empty {
 	display: none;
@@ -11,7 +18,7 @@ input.radio:empty {
 input.radio:empty~label {
 	position: relative; line-height: 2.5em;
 	text-indent: 3.25em;
-	margin-top: 0.5em;
+	margin-top: 2rem;
 	cursor: pointer;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -27,50 +34,41 @@ input.radio:empty~label:before {
 	left: 0;
 	content: '';
 	width: 2.5em;
-	background: #D1D3D4;
+	background: #ffffff;
 	border-radius: 18px 18px 18px 18px;
 	-ms-flex-align: center;
 }
 
 /* toggle hover */
 input.radio:hover:not(:checked)~label:before {
-	content: '\2714';
+	content: '\2713';
 	text-indent: .9em;
-	color: #C2C2C2;
+	font-weight: 900;
 }
 
 input.radio:hover:not(:checked)~label {
-	color: #888;
+	color: #ffcee4;
 }
 
 /* toggle on */
 input.radio:checked~label:before {
-	content: '\2714';
-	text-indent: .9em;
+	content: '\2713';
+	font-weight: 900;
+	text-indent: .9rem;
 
 }
 
-input.radio.siempre:checked~label:before {
-	color: #9CE2AE;
-	background-color: #4baf6d;
-}
-
-input.radio.casiSiempre:checked~label:before {
-	color: #9CE2AE;
-	background-color: #87d350;
-}
-
-input.radio.algunasVeces:checked~label:before {
-	color: #dbc881;
-	background-color: #e5bb3a;
-}
-
-input.radio.nunca:checked~label:before {
-	color: #aa3b41;
-	background-color: #d32827;
+input.radio:checked~label:before {
+	color: #ffe2e9;
+	background-color: #F67D9A;
 }
 
 input.radio:checked~label {
-	color: #777;
+	color: #ffffff;
 }
 /* radio focus */
+.encuesta h2{
+	color: #ffffff;
+	letter-spacing: .2rem;
+	font-weight: 700;
+}

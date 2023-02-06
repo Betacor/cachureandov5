@@ -16,32 +16,12 @@ body{
 }
 
 
-/* Estilos para el HEADER */
-
-/* Estilos para el header : Logo y Nombre Empresa */
-
-.logo{
-    width: 4rem;
-    margin-right: 1rem;
-}
-
-.nombre-empresa{
-    margin-left: 5rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Estilos para el header : Barra de navegación */
-
-nav{
-    margin-top: 2.5rem;
-}
-
-
 /* Estilos para el MAIN  */
 
 section{
     margin-top: 5rem;
     padding: .8rem;
+    /* max-height: 10rem; */
     border-radius: .5rem;
 }
 

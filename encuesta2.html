@@ -6,162 +6,108 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Cachureando</title>
 		<link rel="stylesheet" href="./css/contacto.css">
+		<link rel="stylesheet" href="./css/encuesta.css">
 		<link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
 		<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="./css/navbar.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="./css/styles.css">
 
 	</head>
 
 	<body>
 
-		<!--  Encabezado de la página -->
-		<header>
+        <!-- Navbar, se usa js para insertar -->
+        <header id="header-nav"></header>
 
-			<!-- NAVBAR -->
-
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="container-fluid gap-3">
-					<img src="./img/gancho-de-ropa(1).png" alt="..." class="logo p-2">
-					<a class="navbar-brand" href="./index.html">Cachureando</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-						data-bs-target="#navbarColor03"
-						aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle
-						navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarColor03">
-						<ul class="navbar-nav me-auto">
-
-							<li class="nav-item">
-								<a class="nav-link" href="#quienessomos">Quienes somos</a>
-							</li>
-
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
-									role="button"
-									aria-haspopup="true" aria-expanded="false" href="#quierocomprar">Quiero
-									Comprar</a>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="./tops.html">Tops</a>
-									<a class="dropdown-item" href="./bottoms.html">Bottoms</a>
-									<a class="dropdown-item" href="./chaquetas.html">Chaquetas</a>
-									<a class="dropdown-item" href="./calzado.html">Calzado</a>
-								</div>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link" href="./quierovender.html">Quiero vender</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link" href="/contacto.html">Contacto</a>
-							</li>
-
-						</ul>
-						<form class="d-flex">
-							<input class="form-control me-sm-2" type="search" placeholder="">
-							<button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
-						</form>
-					</div>
-				</div>
-			</nav>
-
-		</header>
 
 		<!-- Contenido de la página  -->
 		<main>
-			<section id="contacto">
-
-
-
-				<!-- Encuesta -->
-
-				<h2>ENCUESTA DE SATISFACCIÓN</h2>
-				<div class="container-fluid bg-secondary">
+				<!-- Encuesta -->	
+			
+			<section class="encuesta container-fluid bg-secondary">
+				<div class="row justify-content-center">
+					<div class="col-12 text-center">
+						<img src="./img/trabajando.png" alt="" width="170">	
+					</div>
+				</div>
+				<div class="row my-5">	
+					<h2>ENCUESTA DE SATISFACCIÓN</h2>
 					<form id="frm1" name="frm1" method="post" action="">
-						<div class="col-md-10 center-block">
-						</div>
-						<!-- pregunta 1 -->
-						<div class="col-md-10 center-block">
+						<div class="">
 							<div class="panel panel-primary">
 
 								<!-- Default panel contents -->
 
-								<div class="panel-heading">
+								<div class="panel-heading text-center">
 								
-									<span style="color:#f4f4f4; font-size:1.2em;">
-										1.-Desde una escala del 0 al 10 donde 0 es muy deficiente y 10 es
-										sobresaliente.
-										¿Cómo calificarías tu experiencia en nuestro sitio web?.
+									<span style="color:#f4f4f4; font-size:1.3em;">
+										Desde una escala del 1 al 10 donde 1 es muy deficiente y 10 es
+										sobresaliente <br> ¿Cómo calificarías tu experiencia en nuestro sitio web?
 									</span>
 								</div>
 								<div class="panel-body">
-									<div class="row">
-										<div class="col-md-1 col-xs-12 text-left">
-											<input type="radio" id="x" name="x" class="radio siempre" required>
-											<label for="x">0</label>
-										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+									<div class="row justify-content-center">
+										<div class="col-2 col-md-1">
 											<input type="radio" id="x2" name="x" class="radio siempre" required>
 											<label for="x2">1</label>
 										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+										<div class="col-2 col-md-1">
 											<input type="radio" id="x3" name="x" class="radio siempre" required>
 											<label for="x3">2</label>
 										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+										<div class="col-2 col-md-1">
 											<input type="radio" id="x4" name="x" class="radio siempre" required>
 											<label for="x4">3</label>
 										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+										<div class="col-2 col-md-1">
 											<input type="radio" id="x5" name="x" class="radio casiSiempre"
 												required>
 											<label for="x5">4</label>
 										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+										<div class="col-3 col-md-1">
 											<input type="radio" id="x6" name="x" class="radio casiSiempre"
 												required>
 											<label for="x6">5</label>
 										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+										<div class="col-2 col-md-1">
 											<input type="radio" id="x7" name="x" class="radio algunasVeces"
 												required>
 											<label for="x7">6</label>
 										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+										<div class="col-2 col-md-1">
 											<input type="radio" id="x8" name="x" class="radio algunasVeces"
 												required>
-											<label for="x8">7</label>
+									<label for="x8">7</label>
 										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+										<div class="col-2 col-md-1">
 											<input type="radio" id="x9" name="x" class="radio algunasVeces"
 												required>
 											<label for="x9">8</label>
 										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+										<div class="col-2 col-md-1">
 											<input type="radio" id="x10" name="x" class="radio nunca" required>
 											<label for="x10">9</label>
 										</div>
-										<div class="col-md-1 col-xs-12 text-left">
+										<div class="col-3 col-md-1">
 											<input type="radio" id="x11" name="x" class="radio nunca" required>
 											<label for="x11">10</label>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-
+						</div>	
 						<!-- *** ALERTA DE ÉXITO*** -->
-						<hr/>
-							<div id="alerta-exito" class="alert alert-dismissible alert-success
-								text-center">
-								<button type="button" class="close" data-dismiss="alert">&times;</button>
-								<strong>¡BIEN HECHO!</strong> Has contestado de forma exitosa la
-								encuesta
-								de satisfacción</a>.
+						<div id="alerta-exito" class="alert alert-dismissible alert-success
+							text-center mt-5">
+							<button id="close-exito" type="button" class="close" data-dismiss="alert">&times;</button>
+							<strong>¡BIEN HECHO!</strong> Has contestado de forma exitosa la
+							encuesta
+							de satisfacción</a>.
 						</div>
+					</section>	
 					</form>
 				</div>
-			</section>
 
 		</main>
 
@@ -170,8 +116,14 @@
 			<div class="carta-final container-fluid text-white text-center">
 				<img src="./img/gancho-de-ropa(2).png" height="40" width="40" alt="">
 				<div class="body py-3">
-					<p class="title sus my-0">Cartquitects | Viña de Mar | Región de Valparaíso
-						| 2023</p>
+					<p class="title sus my-0">Cartquitects  |   Viña de Mar  |  Región de Valparaíso   | 2023</p>
+					<div class="social">
+						<a href="#"><i class="icon ion-social-instagram"></i></a>
+						<a href="#"><i class="icon ion-social-snapchat"></i></a>
+						<a href="#"><i class="icon ion-social-twitter"></i></a>
+						<a href="#"><i class="icon ion-social-facebook"></i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</footer>
@@ -186,7 +138,10 @@
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 			crossorigin="anonymous"></script>
-		<script src="/js/encuesta.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>	
+		<script src="./js/encuesta.js"></script>
+		<script src="./js/navbar.js"></script>
+		
 	</body>
 
 </html>
