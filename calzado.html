@@ -1,120 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cachureando</title>
+        <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cachureando</title>
-    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-</head>
+    <body onload="clock()">
 
-<body onload="clock()">
+        <!-- Encabezado de la página -->
+        
+            <!-- NAVBAR -->
+        <header id="header-nav"></header>
 
-       <!-- NAVBAR -->
-       <header id="header-nav">
-    </header>
+        <!-- Contenido de la página  -->
 
-    <!-- Contenido de la página  -->
+        <main>
 
-    <main>
+            <section id="Calzado">
+                <h2>CALZADO</h2>
+                <div class="row row-cols-1 row-cols-md-6 g-4 mt-5 mb-5 px-5">
 
-        <section id="Calzado">
-            <h2>CALZADO</h2>
-            <div class="row row-cols-1 row-cols-md-6 g-4 mt-5 mb-5 px-5">
+                    <div class="col-lg-3 col-md-6 col-xs-6">
+                        <div class="card">
+                            <div class="carta">
+                                <img src="https://static.zara.net/photos///2022/I/1/1/p/2214/010/009/2/w/750/2214010009_6_1_1.jpg?ts=1657725357074" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body text-end">
+                                <h5 class="card-title">Zapato tacón alto azul</h5>
+                                <a href="#" class="btn" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-lg-3 col-md-6 col-xs-6">
-                    <div class="card">
-                    <div class="carta">
-                        <img src="https://static.zara.net/photos///2022/I/1/1/p/2214/010/009/2/w/750/2214010009_6_1_1.jpg?ts=1657725357074"
-                            class="card-img-top" alt="..."></div>
-                        <div class="card-body text-end">
-                            <h5 class="card-title">Zapato tacón alto azul</h5>
-                            <a href="#" class="btn" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
+                    <div class="col-lg-3 col-md-6 col-xs-6">
+                        <div class="card">
+                            <div class="carta">
+                                <img src="https://static.zara.net/photos///2022/I/1/1/p/1208/010/009/2/w/750/1208010009_6_1_1.jpg?ts=1659022079287" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body text-end">
+                                <h5 class="card-title">Zapato tacón blanco</h5>
+                                <a href="#" class="btn" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-xs-6">
+                        <div class="card">
+                            <div class="carta">
+                                <img src="https://static.zara.net/photos///2023/W/1/1/p/3720/110/001/2/w/750/3720110001_6_1_1.jpg?ts=1674478651093" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body text-end">
+                                <h5 class="card-title">Zapato blanco</h5>
+                                <a href="#" class="btn" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-xs-6">
+                        <div class="card">
+                            <div class="carta">
+                                <img src="https://static.zara.net/photos///2023/W/1/1/p/2221/110/001/4/w/750/2221110001_6_1_1.jpg?ts=1674072603303" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body text-end">
+                                <h5 class="card-title">Zapato tacón bajo</h5>
+                                <a href="#" class="btn" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="col-lg-3 col-md-6 col-xs-6">
-                    <div class="card">
-                    <div class="carta">
-                        <img src="https://static.zara.net/photos///2022/I/1/1/p/1208/010/009/2/w/750/1208010009_6_1_1.jpg?ts=1659022079287"
-                            class="card-img-top" alt="..."></div>
-                        <div class="card-body text-end">
-                            <h5 class="card-title">Zapato tacón blanco</h5>
-                            <a href="#" class="btn" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="flecha2">
+                <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="" width="50"></a>
+            </div>
+            <div class="flecha">
+                <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
+            </div>
 
-                <div class="col-lg-3 col-md-6 col-xs-6">
-                    <div class="card">
-                    <div class="carta">
-                        <img src="https://static.zara.net/photos///2023/W/1/1/p/3720/110/001/2/w/750/3720110001_6_1_1.jpg?ts=1674478651093"
-                            class="card-img-top" alt="..."></div>
-                        <div class="card-body text-end">
-                            <h5 class="card-title">Zapato blanco</h5>
-                            <a href="#" class="btn" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+        </main>
 
-                <div class="col-lg-3 col-md-6 col-xs-6">
-                    <div class="card">
-                    <div class="carta">
-                        <img src="https://static.zara.net/photos///2023/W/1/1/p/2221/110/001/4/w/750/2221110001_6_1_1.jpg?ts=1674072603303"
-                            class="card-img-top" alt="..."></div>
-                        <div class="card-body text-end">
-                            <h5 class="card-title">Zapato tacón bajo</h5>
-                            <a href="#" class="btn" onclick="mostrar()"> <img src="./img/agregar-carrito(2).png" width="30" height="30" alt=""></a>
-                        </div>
+        <!-- Pie de página-->
+        
+        <footer>
+            <div class="carta-final container-fluid text-white text-center">
+                <img src="./img/gancho-de-ropa(2).png" height="40" width="40" alt="">
+                
+                <!-- Fecha y Hora -->
+                <div id="clock"></div>
+                
+                <div class="body py-3">
+                    <p class="title sus my-0">Codecats  |   Viña de Mar  |  Región de Valparaíso   | 2023</p>
+                    <div class="social">
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="flecha2">
-            <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="" width="50"></a>
-        </div>
-        <div class="flecha">
-            <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
-    
-    </div>
-    </main>
+        </footer>
 
-    <!-- Pie de página-->
-    
-    <footer>
-        <div class="carta-final container-fluid text-white text-center">
-            <img src="./img/gancho-de-ropa(2).png" height="40" width="40" alt="">
-            
-            <!-- Fecha y Hora -->
-            <div id="clock"></div>
-            
-            <div class="body py-3">
-                <p class="title sus my-0">Codecats  |   Viña de Mar  |  Región de Valparaíso   | 2023</p>
-                <div class="social">
-                    <a href="#"><i class="icon ion-social-instagram"></i></a>
-                    <a href="#"><i class="icon ion-social-snapchat"></i></a>
-                    <a href="#"><i class="icon ion-social-twitter"></i></a>
-                    <a href="#"><i class="icon ion-social-facebook"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="./js/index.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
+        <script src="./js/navbar.js"></script>
+        <script src="./js/index.js"></script> <!--Agrega Fecha y Hora-->
 
-    <script src="./js/bootstrap/bootstrap.bundle.min.js">
-    </script>
-    <script src="./js/index.js" type="text/javascript">
-    </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!--Alerta de carritos-->
-    <script src="./js/navbar.js"></script>
-    <script src="./js/index.js"></script> <!--Agrega Fecha y Hora-->
-
-</body>
+    </body>
 
 </html>

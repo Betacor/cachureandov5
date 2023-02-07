@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Cachureando</title>
-		<link rel="stylesheet" href="./css/contacto.css">
+		
 		<link rel="stylesheet" href="./css/encuesta.css">
 		<link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
 		<link rel="icon" href="./img/favicon.ico" type="image/x-icon">
@@ -18,15 +18,16 @@
 
 	<body onload="clock()">
 
+        <!-- Encabezado de la página -->
+
         <!-- Navbar, se usa js para insertar -->
         <header id="header-nav"></header>
-
 
 		<!-- Contenido de la página  -->
 		<main>
 				<!-- Encuesta -->	
 			
-			<section class="encuesta container-fluid bg-secondary">
+            <section class="encuesta container-fluid bg-secondary">
 				<div class="row justify-content-center">
 					<div class="col-12 text-center">
 						<img src="./img/trabajando.png" alt="" width="200">	
@@ -38,14 +39,8 @@
 						<div class="">
 							<div class="panel panel-primary">
 
-								<!-- Default panel contents -->
-
 								<div class="panel-heading text-center mb-4">
-								
-									<span style="color:#f4f4f4; font-size:1.3em;">
-										Desde una escala del 1 al 10 donde 1 es muy deficiente y 10 es
-										sobresaliente <br> ¿Cómo calificarías tu experiencia en nuestro sitio web?
-									</span>
+									<span style="color:#f4f4f4; font-size:1.3em;"> Desde una escala del 1 al 10 donde 1 es muy deficiente y 10 es sobresaliente <br> ¿Cómo calificarías tu experiencia en nuestro sitio web?</span>
 								</div>
 								<div class="panel-body">
 									<div class="row justify-content-center">
@@ -62,28 +57,23 @@
 											<label for="x4">3</label>
 										</div>
 										<div class="col-2 col-md-1">
-											<input type="radio" id="x5" name="x" class="radio casiSiempre"
-												required>
+											<input type="radio" id="x5" name="x" class="radio casiSiempre" required>
 											<label for="x5">4</label>
 										</div>
 										<div class="col-3 col-md-1">
-											<input type="radio" id="x6" name="x" class="radio casiSiempre"
-												required>
+											<input type="radio" id="x6" name="x" class="radio casiSiempre" required>
 											<label for="x6">5</label>
 										</div>
 										<div class="col-2 col-md-1">
-											<input type="radio" id="x7" name="x" class="radio algunasVeces"
-												required>
+											<input type="radio" id="x7" name="x" class="radio algunasVeces"	required>
 											<label for="x7">6</label>
 										</div>
 										<div class="col-2 col-md-1">
-											<input type="radio" id="x8" name="x" class="radio algunasVeces"
-												required>
-									<label for="x8">7</label>
+											<input type="radio" id="x8" name="x" class="radio algunasVeces" required>
+                                            <label for="x8">7</label>
 										</div>
 										<div class="col-2 col-md-1">
-											<input type="radio" id="x9" name="x" class="radio algunasVeces"
-												required>
+											<input type="radio" id="x9" name="x" class="radio algunasVeces"	required>
 											<label for="x9">8</label>
 										</div>
 										<div class="col-2 col-md-1">
@@ -98,24 +88,22 @@
 								</div>
 							</div>
 						</div>	
+
 						<!-- *** ALERTA DE ÉXITO*** -->
-						<div id="alerta-exito" class="alert alert-dismissible alert-success
-							text-center mt-5">
+						<div id="alerta-exito" class="alert alert-dismissible alert-success	text-center mt-5">
 							<button id="close-exito" type="button" class="close" data-dismiss="alert">&times;</button>
-							<a href="#"><strong>¡BIEN HECHO!</strong> Has contestado de forma exitosa la
-							encuesta de satisfacción</a>
+							<a href="#"><strong>¡BIEN HECHO!</strong> Has contestado de forma exitosa la encuesta de satisfacción</a>
 						</div>
-		                
-					   </form>
-				       </div>
-			           </section>	
+					</form>
+				</div>
+			</section>	
 	
-				<div class="flecha2">
-					<a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="" width="50"></a>
-				</div>
-				<div class="flecha">
-					<a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
-				</div>
+            <div class="flecha2">
+                <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="" width="50"></a>
+            </div>
+            <div class="flecha">
+                <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
+            </div>
 				
 
 		</main>
@@ -135,24 +123,17 @@
 						<a href="#"><i class="icon ion-social-snapchat"></i></a>
 						<a href="#"><i class="icon ion-social-twitter"></i></a>
 						<a href="#"><i class="icon ion-social-facebook"></i></a>
-						
 					</div>
 				</div>
 			</div>
 			
 		</footer>
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-			crossorigin="anonymous"></script>
+		<script	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-		<!--Script de Encuesta-->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-			crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>	
+		
+		<script	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>	<!--Script de Encuesta-->
 		<script src="./js/encuesta.js"></script>
 		<script src="./js/navbar.js"></script>
         <script src="./js/index.js"></script> <!--Agrega Fecha y Hora-->
