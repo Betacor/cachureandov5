@@ -1,7 +1,7 @@
 const headerNav = document.getElementById("header-nav");
 headerNav.innerHTML =
     '<nav class="navbar">' +
-    '<button id="bar-toggler"class="navbar-toggler" aria-controls="bar-collapse-l" aria-expanded="false"><span id="navbar-toggler-icon">X</span></button>' +
+    '<button id="bar-toggler"class="navbar-toggler" aria-controls="bar-collapse-l" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>' +
     '<ul id="bar-collapse-l"  class="bar left " data-visible="false">' +
     '<li><a href="./index.html#quierocomprar"><span aria-hidden="true">Quiero comprar</span></a></li>' +
     '<li><a href="./quierovender.html"><span aria-hidden="true">Quiero vender</span></a></li>' +

@@ -11,6 +11,7 @@ function clock() {
 
     setTimeout(clock, 1000);
 }
+
 function toTwoDigits(n) {
     let newString = n;
     if (n < 10) {
@@ -18,6 +19,8 @@ function toTwoDigits(n) {
     }
     return newString;
 }
+
+// Alerta de Carrito
 function mostrar() {
     swal("Seguro que deseas agregar al carrito",{
         buttons: ["Si", "No"]
