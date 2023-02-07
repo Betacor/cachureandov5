@@ -1,6 +1,9 @@
 .encuesta{
 	/* height: 20rem; */
-
+	padding-top: 7rem !important;
+    padding-bottom: 4rem !important;
+	margin-top: 0rem !important;
+	
 }
 
 .center-block {
@@ -16,7 +19,8 @@ input.radio:empty {
 
 /* style label */
 input.radio:empty~label {
-	position: relative; line-height: 2.5em;
+	position: relative; 
+    line-height: 2.5em;
 	text-indent: 3.25em;
 	margin-top: 2rem;
 	cursor: pointer;
@@ -35,7 +39,7 @@ input.radio:empty~label:before {
 	content: '';
 	width: 2.5em;
 	background: #ffffff;
-	border-radius: 18px 18px 18px 18px;
+	border-radius: 15px 15px 15px 15px;
 	-ms-flex-align: center;
 }
 

@@ -1,29 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-
 /* Estilos generales */
 *{
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
     font-style: light;
 }
 
-
-/* Estilos para el header : Hero */
+/* Estilos para el header*/
 
 .carousel{
     max-height: 40rem;
 }
 .carousel-item img{
-   object-fit: cover;
-   max-height: 40rem;
+    object-fit: cover;
+    max-height: 40rem;
 }
 .carousel-caption{
     color: #FFF;
 }
-
 
 /* Estilos para el MAIN  */
 
@@ -39,7 +34,7 @@ section p{
 }
 
 .carta{
-   height: 400px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -57,7 +52,7 @@ h2{
 }
 
 #quierovender{
-    background-color: #faa6bca5;
+    background-color: #ffcecea5;
     padding: 7rem;
 }
 
@@ -65,7 +60,6 @@ h2{
     background-color: #ffffff;
     letter-spacing: .05rem;
 }
-
 
 /* Estilos para el footer*/
 
@@ -82,8 +76,8 @@ footer{
 footer .social {
     margin-top: 1rem;
     text-align:center;
-  }
-  
+}
+
 footer .social > a {
     font-size:24px;
     width:40px;
@@ -94,123 +88,38 @@ footer .social > a {
     margin:0 8px;
     color:inherit;
     opacity:0.75;
-  }
-  
+}
+
 footer .social > a:hover {
     opacity:0.4;
-  }
+    }
 
 /* Responsive */
 
 @media (max-width:480px) {
-    
-    /* Estilos para hero */
-    .hero {
-        width: 100%;
-        height: 50vh;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .hero .hero-text {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        z-index: 1;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .hero .hero-text p {
-        color: #FFF;
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text h1 {
-        color: #FFF;
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text a {
-        color: #333;
-        letter-spacing: 2rem;
-        font-size: 15px;
-        background-color: #FFF;
-        border: 2px solid #FFF;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 2px;
-    }
-
+        
     /* Estilos para section */
     section{
         margin-top: 1rem;
         padding: .8rem;
-        border-radius: .5rem;
+        /* border-radius: .5rem; */
     }
 
     /* Estilos para footer */
-
     footer {
         font-size: 14px;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
 }
 
 @media (min-width:480px) and (max-width: 768px){
-
-    /* Estilos para hero */
-    .hero {
-        width: 100%;
-        height: 50vh;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .hero .hero-text {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        z-index: 1;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .hero .hero-text p {
-        color: #FFF;
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text h1 {
-        color: #FFF;
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text a {
-        color: #333;
-        font-size: 15px;
-        background-color: #FFF;
-        border: 2px solid #FFF;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 2px;
-    }
-
+    
     /* Estilos para section */
     section{
         margin-top: 1rem;
         padding: .8rem;
-        border-radius: .5rem;
+        /* border-radius: .5rem; */
     }
 
     /* Estilos para footer */
@@ -220,44 +129,33 @@ footer .social > a:hover {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
 }
 
 @media (min-width:768px) and (max-width: 1024px){
 
-    /* Estilos para hero */
-    .hero {
-        width: 100%;
-        height: 80vh;
-        overflow: hidden;
-        position: relative;
-    }
-
     /* Estilos para section */
     section{
         margin-top: 1rem;
         padding: .8rem;
-        border-radius: .5rem;
+        /* border-radius: .5rem; */
     }
 
     /* Estilos para footer */
-
     footer {
         font-size: 14px;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
 }
 
 #clock{
     padding-top: 2rem;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-size: larger;
     background-color: #FAA6BD;
     color: #FFF;
 }
+
 .flecha{
     width: 50px;
     height: 50px;
@@ -266,4 +164,14 @@ footer .social > a:hover {
     left: 20px;
     border-radius: 50%;
     padding: 0;
-  }
+}
+
+.flecha2{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 130px;
+    left: 20px;
+    border-radius: 50%;
+    padding: 0;
+}
