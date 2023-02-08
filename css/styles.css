@@ -1,92 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
-
 /* Estilos generales */
 *{
     padding: 0;
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    /* font-family: 'Poppins', sans-serif; */
     font-style: light;
 }
 
-body{
-    /* font-family: 'Poppins', sans-serif; */
-    width: 100%;
+/* Estilos para el header*/
+
+.carousel{
+    max-height: 40rem;
 }
-
-
-/* Estilos para el HEADER */
-
-/* Estilos para el header : Logo y Nombre Empresa */
-
-.logo{
-    width: 4rem;
-    margin-right: 1rem;
+.carousel-item img{
+    object-fit: cover;
+    max-height: 40rem;
 }
-
-.nombre-empresa{
-    margin-left: 5rem;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Estilos para el header : Barra de navegación */
-
-
-
-#navbarColor03{
-border-color: black;
-}
-
-/* Estilos para el header : Hero */
-
-.hero {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-
-.hero img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-.hero .hero-text {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    z-index: 1;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hero .hero-text h1 {
+.carousel-caption{
     color: #FFF;
-    font-size: 64px;
-    margin-bottom: 20px;
 }
-
-.hero .hero-text p {
-    color: #FFF;
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.hero .hero-text a {
-    color: #333;
-    font-size: 20px;
-    background-color: #FFF;
-    border: 2px solid #FFF;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 2px;
-}
-
 
 /* Estilos para el MAIN  */
 
@@ -102,7 +34,7 @@ section p{
 }
 
 .carta{
-   height: 400px;
+    height: 400px;
     overflow: hidden;
 }
 
@@ -114,135 +46,80 @@ section p{
 
 h2{
     text-align: center;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    color: #8c797e;
 }
 
 #quierovender{
-    background-color: rgb(234, 237, 226);
+    background-color: #ffcecea5;
     padding: 7rem;
 }
 
+#quienessomos{
+    background-color: #ffffff;
+    letter-spacing: .05rem;
+}
 
 /* Estilos para el footer*/
 
 footer{
-    background-color: rgba(255, 153, 155, 0.852);
-    color: antiquewhite;
-    padding: 4rem;
+    background-color: #FAA6BD;
+    padding: 3rem;
     text-align: center;
+    text-shadow: #333;
+    font-weight: 500;
+    letter-spacing: .1rem;
     /* font-weight: bold; */
 }
+
+footer .social {
+    margin-top: 1rem;
+    text-align:center;
+}
+
+footer .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+
+footer .social > a:hover {
+    opacity:0.4;
+    }
 
 /* Responsive */
 
 @media (max-width:480px) {
-    
-    /* Estilos para hero */
-    .hero {
-        width: 100%;
-        height: 50vh;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .hero .hero-text {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        z-index: 1;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .hero .hero-text p {
-        color: #FFF;
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text h1 {
-        color: #FFF;
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text a {
-        color: #333;
-        letter-spacing: 2rem;
-        font-size: 15px;
-        background-color: #FFF;
-        border: 2px solid #FFF;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 2px;
-    }
-
+        
     /* Estilos para section */
     section{
         margin-top: 1rem;
         padding: .8rem;
-        border-radius: .5rem;
+        /* border-radius: .5rem; */
     }
 
     /* Estilos para footer */
-
     footer {
         font-size: 14px;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
 }
 
 @media (min-width:480px) and (max-width: 768px){
-
-    /* Estilos para hero */
-    .hero {
-        width: 100%;
-        height: 50vh;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .hero .hero-text {
-        width: 100%;
-        height: 50vh;
-        display: flex;
-        z-index: 1;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .hero .hero-text p {
-        color: #FFF;
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text h1 {
-        color: #FFF;
-        font-size: 50px;
-        margin-bottom: 10px;
-    }
-
-    .hero .hero-text a {
-        color: #333;
-        font-size: 15px;
-        background-color: #FFF;
-        border: 2px solid #FFF;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 2px;
-    }
-
+    
     /* Estilos para section */
     section{
         margin-top: 1rem;
         padding: .8rem;
-        border-radius: .5rem;
+        /* border-radius: .5rem; */
     }
 
     /* Estilos para footer */
@@ -252,42 +129,49 @@ footer{
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
 }
 
 @media (min-width:768px) and (max-width: 1024px){
 
-    /* Estilos para hero */
-    .hero {
-        width: 100%;
-        height: 80vh;
-        overflow: hidden;
-        position: relative;
-    }
-
     /* Estilos para section */
     section{
         margin-top: 1rem;
         padding: .8rem;
-        border-radius: .5rem;
+        /* border-radius: .5rem; */
     }
 
     /* Estilos para footer */
-
     footer {
         font-size: 14px;
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
 }
 
 #clock{
     padding-top: 2rem;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-size: larger;
-    background-color: rgba(255, 153, 155, 0.852);
+    background-color: #FAA6BD;
     color: #FFF;
 }
 
+.flecha{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.flecha2{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 130px;
+    left: 20px;
+    border-radius: 50%;
+    padding: 0;
+}

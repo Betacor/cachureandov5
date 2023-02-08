@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,198 +7,90 @@
         <title>Cachureando</title>
         <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     </head>
 
-    <body>
+    <body onload="clock()">
 
-        <!--  Encabezado de la página -->
-        <header>
+        <!-- Encabezado de la página -->
+        
+            <!-- Navbar, se usa js para insertar -->
+        <header id="header-nav"></header>
 
-            <!-- NAVBAR -->
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid gap-3">
-                    <img src="./img/gancho-de-ropa(1).png" alt="..." class="logo
-                        p-2">
-                    <a class="navbar-brand" href="./index.html">Cachureando</a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarColor03"
-                        aria-controls="navbarColor03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarColor03">
-                        <ul class="navbar-nav me-auto">
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#quienessomos">Quienes
-                                    somos</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle"
-                                    data-bs-toggle="dropdown"
-                                    role="button"
-                                    aria-haspopup="true" aria-expanded="false"
-                                    href="#quierocomprar">Quiero Comprar</a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="./tops.html">Tops</a>
-                                    <a class="dropdown-item"
-                                        href="./bottoms.html">Bottoms</a>
-                                    <a class="dropdown-item"
-                                        href="./chaquetas.html">Chaquetas</a>
-                                    <a class="dropdown-item"
-                                        href="./calzado.html">Calzado</a>
-
-                                </div>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="./quierovender.html">Quiero
-                                    vender</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./encuesta2.html">Encuesta</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-sm-2" type="search"
-                                placeholder="">
-                            <button class="btn btn-secondary my-2 my-sm-0"
-                                type="submit">Buscar</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- HERO -->
-
-            <!--<div class="hero">
-            <img src="./img/hero.jpg" alt="Hero Image">
-
-            <div class="hero-text">
-                <h1>Cachureando</h1>
-                <p>La mejor forma de reciclar aquello que no usas</p>
-                <a href="#quierocomprar" title="call to action button">Explorar</a>
-            </div>
-        </div> -->
-            <div id="carouselExampleCaptions" class="carousel slide"
-                data-bs-ride="carousel">
+            <!-- Carrusel -->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button"
-                        data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/hero.jpg" class="d-block w-100"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Cachureando</h1>
-                            <p>La mejor forma de reciclar aquello que no usas.</p>
-                        </div>
+                        <img src="./img/LANDING_Mesa de trabajo 1.png" class="d-block w-100" alt="...">
                     </div>
+
                     <div class="carousel-item">
-                        <img src="./img/slide.jpg" class="d-block w-100"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Cachureando</h1>
-                            <p>La mejor forma de reciclar aquello que no usas.</p>
-                        </div>
+                        <img src="./img/LANDING_Mesa de trabajo 1.png" class="d-block w-100" alt="...">
                     </div>
+                    
                     <div class="carousel-item">
-                        <img src="./img/ropareciclada.jpg" class="d-block w-100"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1>Cachureando</h1>
-                            <p>La mejor forma de reciclar aquello que no usas.</p>
-                        </div>
+                        <img src="./img/LANDING_Mesa de trabajo 1.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button"
-                    data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </header>
+                
 
         <!-- Contenido de la página  -->
 
         <main>
 
-        <section id="quienessomos">
-            <div class="row justify-content-center mb-5 mt-5">
-                <div class="col-8">
-                    <h2>Quienes somos</h2>
-                    <div class="text-quienessomos mt-5 text-center"></div>
-                    <p>Somos un equipo de emprendedores jóvenes preocupados del medio ambiente. Nuestra misión es
-                        incentivar a otros a reciclar y reutilizar al darles un nuevo uso a prendas y accesorios de
-                        segunda mano. Trabajamos con nuestros proveedores, trabajadores, sindicatos y organismos internacionales para desarrollar una cadena de suministro en la que se respetan y promueven los derechos humanos, contribuyendo a los Objetivos de Desarrollo Sostenible de Naciones Unidas. </p>
+            <section id="quienessomos">
+                <div class="row justify-content-center mb-5">
+                    <div class="col-8">
+                        <h2>Quienes somos</h2>
+                        <div class="text-quienessomos mt-5 text-center"></div>
+                        <p>Somos un equipo de emprendedores jóvenes preocupados del medio ambiente. Nuestra misión es incentivar a otros a reciclar y reutilizar al darles un nuevo uso a prendas y accesorios de segunda mano. Trabajamos con nuestros proveedores, trabajadores, sindicatos y organismos internacionales para desarrollar una cadena de suministro en la que se respetan y promueven los derechos humanos, contribuyendo a los Objetivos de Desarrollo Sostenible de Naciones Unidas. </p>
+                    </div>
                 </div>
             </section>
 
             <section id="quierocomprar">
                 <h2>Quiero comprar</h2>
                 <div class="row row-cols-1 row-cols-md-4 g-4 mt-5 mb-5 px-5">
+
                     <div class="col-lg-3 col-md-6 col-xs-6">
                         <div class="card">
                             <div class="carta">
-                                <img
-                                    src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665"
-                                    class="card-img-top" alt="..." id="tops"></div>
+                                <img src="https://static.zara.net/photos///2022/I/0/1/p/5802/123/640/2/w/750/5802123640_6_1_1.jpg?ts=1660895338665" class="card-img-top" alt="..." id="tops">
+                            </div>
                             <div class="card-body text-center">
                                 <h5 class="card-title">TOPS</h5>
-                                <a href="./tops.html" class="btn
-                                    btn-outline-secondary">+</a>
+                                <a href="./tops.html" class="btn btn-outline-secondary">+</a>
                             </div>
-                        </div>
-                    </div>
-
-                <div class="col-lg-3 col-md-6 col-xs-6">
-                    <div class="card">
-                        <div class="carta">
-                        <img src="https://static.zara.net/photos///2023/W/0/1/p/8417/312/982/2/w/750/8417312982_6_1_1.jpg?ts=1674478371681"
-                            class="card-img-top" alt="..." id="bottoms"></div>
-                        <div class="card-body text-center">
-                            <h5 class="card-title">PANTALONES</h5>
-                            <a href="./bottoms.html" class="btn btn-outline-secondary">+</a>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-xs-6">
                         <div class="card">
                             <div class="carta">
-                                <img
-                                    src="https://static.zara.net/photos///2023/W/0/1/p/4432/906/800/2/w/750/4432906800_6_1_1.jpg?ts=1674478307286"
-                                    class="card-img-top" alt="..."
-                                    id="chaquetas"></div>
+                                <img src="https://static.zara.net/photos///2023/W/0/1/p/8417/312/982/2/w/750/8417312982_6_1_1.jpg?ts=1674478371681" class="card-img-top" alt="..." id="bottoms">
+                            </div>
                             <div class="card-body text-center">
-                                <h5 class="card-title">CHAQUETAS</h5>
-                                <a href="./chaquetas.html" class="btn
-                                    btn-outline-secondary">+</a>
+                                <h5 class="card-title">PANTALONES</h5>
+                                <a href="./bottoms.html" class="btn btn-outline-secondary">+</a>
                             </div>
                         </div>
                     </div>
@@ -207,13 +98,23 @@
                     <div class="col-lg-3 col-md-6 col-xs-6">
                         <div class="card">
                             <div class="carta">
-                                <img
-                                    src="https://static.zara.net/photos///2023/W/1/1/p/1509/010/002/2/w/750/1509010002_6_1_1.jpg?ts=1674637938041"
-                                    class="card-img-top" alt="..." id="calzado"></div>
+                                <img src="https://static.zara.net/photos///2023/W/0/1/p/4432/906/800/2/w/750/4432906800_6_1_1.jpg?ts=1674478307286" class="card-img-top" alt="..." id="chaquetas">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title" >CHAQUETAS</h5>
+                                <a href="./chaquetas.html" class="btn btn-outline-secondary">+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-xs-6">
+                        <div class="card">
+                            <div class="carta">
+                                <img src="https://static.zara.net/photos///2023/W/1/1/p/1509/010/002/2/w/750/1509010002_6_1_1.jpg?ts=1674637938041" class="card-img-top" alt="..." id="calzado">
+                            </div>
                             <div class="card-body text-center">
                                 <h5 class="card-title">CALZADO</h5>
-                                <a href="./calzado.html" class="btn
-                                    btn-outline-secondary">+</a>
+                                <a href="./calzado.html" class="btn btn-outline-secondary">+</a>
                             </div>
                         </div>
                     </div>
@@ -221,31 +122,51 @@
             </section>
 
             <section id="quierovender">
-                <h2>¿Quieres vender?</h2>
-                <div class="text-center mt-5 mb-5">
-                    <a href="./quierovender.html" class="btn
-                        btn-outline-secondary">Si, quiero vender!</a>
+        
+                <h2>¿Quieres vender?</h2>       
+                
+                <div class="text-center mb-3 mt-3">
+                    <a href="./quierovender.html" class="btn btn-outline-secondary">Si, quiero vender!</a>
                 </div>
-            </section>
-
+                
+            </section>  
+            
+            <div class="flecha2">
+                <a href="./carrito.html"><img src="./img/carro-de-la-carretilla.png" alt="" width="50"></a>
+            </div>
+            <div class="flecha">
+                <a href="https://web.whatsapp.com/"><img src="./img/whatsapp(1).png" alt="" width="50"></a>
+            </div>
+        
         </main>
 
 
         <!-- Pie de página-->
-
         <footer>
             <div class="carta-final container-fluid text-white text-center">
-                <img src="./img/gancho-de-ropa(2).png" height="40" width="40"
-                    alt="">
+                <img src="./img/gancho-de-ropa(2).png" height="40" width="40" alt="">
+                
+                <!-- Fecha y Hora -->
+                <div id="clock"></div>
+                
                 <div class="body py-3">
-                    <p class="title sus my-0">Cartquitects | Viña de Mar |
-                        Región de Valparaíso | 2023</p>
+                    <p class="title sus my-0">Codecats  |   Viña de Mar  |  Región de Valparaíso   | 2023</p>
+                    <div class="social">
+                        <a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <a href="#"><i class="icon ion-social-snapchat"></i></a>
+                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
+                        <a href="#"><i class="icon ion-social-facebook"></i></a>
+
+                    </div>
                 </div>
             </div>
         </footer>
 
-        <script src="./js/bootstrap/bootstrap.bundle.min.js">
-    </script>
+        <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="./js/navbar.js"></script>
+        <script src="./js/index.js"></script> <!--Agrega Fecha y Hora-->
+
     </body>
 
 </html>
